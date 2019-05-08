@@ -1,4 +1,4 @@
-const c = @cImport(@cInclude("../../src/swrender/r_common.h"));
+const c = @cImport(@cInclude("src/swrender/r_common.h"));
 
 export fn softRwBeginFrame(camera_separation: f32) void {
 

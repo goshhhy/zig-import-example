@@ -10,6 +10,7 @@ pub fn build(b: *Builder) void {
     render_sdl.addCSourceFile("src/platform/linux/sys_main.c", [][]const u8{"-std=c99"});
 
     render_sdl.linkSystemLibrary("c");
+    render_sdl.addIncludeDir("./");
 
     b.default_step.dependOn(&render_sdl.step);
 }

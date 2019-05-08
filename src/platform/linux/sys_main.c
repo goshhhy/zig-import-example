@@ -1,4 +1,4 @@
-#include "../../swrender/r_common.h"
+#include "swrender/r_common.h"
 
 
 int main( int argc, char** argv ) {
